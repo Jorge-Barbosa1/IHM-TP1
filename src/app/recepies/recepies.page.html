@@ -1,0 +1,47 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title
+    size="large" class="ion-text-center"> Receitas à Viana
+    </ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>  
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" color="background">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title
+      size="large" class="ion-text-center"> Receitas à Viana
+    </ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-card>
+    <ion-row class= "ion-align-items-center ion-justify-content-top">
+      <img alt="VianaCity" src = "./assets/images/VianaCity.jpg"> 
+    </ion-row>
+  </ion-card>
+
+
+  <ion-card color="button" class="button">
+   <!-- Botão para a página da Torta de Viana -->
+   <ion-button (click)="recepie1()" expand="block" fill="clear" shape="round" color="light">
+    Torta de Viana
+    </ion-button>
+  </ion-card>
+    <ion-card color="button">
+     <!-- Botão para a página do Bacahalau à Viana -->
+  <ion-button (click)="recepie2()" expand="block" fill="clear" shape="round" color="light">
+    Bacalhau à Viana
+    </ion-button>
+  </ion-card>
+  <ion-card color="button">
+   <!-- Botão para a página dos Rojões à moda do Minho -->
+   <ion-button (click)="recepie3()" expand="block" fill="clear" shape="round" color="light">
+    Rojões à moda do Minho
+    </ion-button> 
+  </ion-card> 
+</ion-content>
+

@@ -1,0 +1,45 @@
+<ion-header [translucent]="true" color="primary">
+  <ion-toolbar >
+    <ion-title size="large" class="ion-text-center" > 
+      Receitas à Viana
+    </ion-title>
+      
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" color="background">
+
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large" class="ion-text-center" >Receitas à Viana</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content [fullscreen]="true" color="background"  >
+    <img alt="VianaCity" class="ion-align-items-start" src="./assets/images/VianaCity.jpg">
+      
+    
+    <ion-card class="ion-padding" color="titulos">
+       <!-- Botão para a página da Apresentação -->
+      <ion-card class="button-card">
+        <ion-button  class="custom-button" (click)="presentation()" expand="block" fill="clear" shape="round" color="dark">
+          Apresentação
+        </ion-button>
+      </ion-card>
+      <ion-card class="button-card">
+      <!-- Botão para a página das Receitas -->
+      <ion-button  class="custom-button"  (click)="recepies()" expand="block" fill="clear" shape="round" color="dark" >
+        Receitas
+      </ion-button>
+    </ion-card>
+    <ion-card class="button-card">
+      <!-- Botão para a página das Curiosidades -->
+      <ion-button  class="custom-button"  (click)="curiosities()" expand="block" fill="clear" shape="round"color="dark" >
+        Curiosidades
+      </ion-button>
+    </ion-card>
+  </ion-card>
+  </ion-content>
+</ion-content>
+
+
